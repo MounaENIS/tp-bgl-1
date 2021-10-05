@@ -219,11 +219,11 @@ vous voulez les annuler et revenir à la dernière version commitée.
 Pour cela vous pouvez utiliser `git checkout` comme sur l'exemple suivant
 
 ```bash
-$ rm hello.c
+$ rm test.c
 
-# Ooops j'ai effacé hello.c
+# Ooops j'ai effacé test.c
 
-$ git checkout hello.c
+$ git checkout test.c
 
 # tout va bien !
 
@@ -261,7 +261,7 @@ Pour envoyer vos changements sur GitHub faites:
 1. Vérifiez que les changements sont maintenant disponibles sur GitHub.
 
 2. GitHub vous permets de faire des modifications directement en ligne. 
-   Modifiez le fichier `hello.c` depuis l'interface GitHub.
+   Modifiez le fichier `test.c` depuis l'interface GitHub.
 
 3. Pour récupérer les modifications faites sur l'interface web sur votre
 machine, utilisez la commande
@@ -279,7 +279,7 @@ de résoudre les conflits à la main.
 Git permets l'utilisation de plusieurs branches de code. Cela vous permets de travailler sur plusieurs versions du code en même temps.
 Cela peut être intéressant de créer une nouvelle branche pour développer une fonctionnalité nouvelle.
 
-Nous souhaitons modifier `hello.c` pour demander le nom à l'utilisateur et l'afficher.
+Nous souhaitons modifier `test.c` pour demander le nom à l'utilisateur et l'afficher.
 
 1. Utilisez la commande `git checkout -b demande-nom` pour créer une nouvelle branche nommée `demande-nom`.
 
@@ -287,12 +287,12 @@ Nous souhaitons modifier `hello.c` pour demander le nom à l'utilisateur et l'af
 
 3. À tout moment vous pouvez revenir sur `main` avec la commande `git checkout main`.
 
-4. Dans la branche `demande-nom` modifiez `hello.c` de manière à rajouter la nouvelle fonctionnalité pour demander le nom à l'utilisateur et l'afficher. Vous pouvez par exemple utiliser la fonction de la bibliothèque standard C `scanf()`.
+4. Dans la branche `demande-nom` modifiez `test.c` de manière à rajouter la nouvelle fonctionnalité pour demander le nom à l'utilisateur et l'afficher. Vous pouvez par exemple utiliser la fonction de la bibliothèque standard C `scanf()`.
 
 5. Commitez vos changements dans la nouvelle branche.
 
 6. Utilisez la commande `git push origin demande-nom` pour pousser la nouvelle branche sur GitHub.
 
-7. Il est possible de fusionner deux branches avec la commande `git merge`. Utilisez la commande pour fusionner la branche `demande-nom` dans `master`.
+7. Il est possible de fusionner deux branches avec la commande `git merge`. Utilisez la commande pour fusionner la branche `demande-nom` dans `main`.
 
 8. Envoyez vos modifications sur GitHub.
